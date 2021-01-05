@@ -40,3 +40,31 @@ function checkPalindrom(str) {
 
 checkPalindrom(word1);
 checkPalindrom(word2);
+
+// Задание №4
+console.log ('Задание 4')
+
+function matr(c, matrix) {
+
+    console.log('Исходная матрица');
+    for(let row of matrix) {
+        console.log(row.join('   '));
+    }
+    
+    let n = matrix.length;
+    let k = matrix[0].length;
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < k; j++) {
+            matrix[i][j] *= c;
+        }
+    }
+    console.log('Матрица, умноженная на 2');
+    for(let row of matrix) {
+        console.log(row.join('   '));
+    }
+}
+matr(2, [
+    [1, 4, 7],
+    [2, 5, 8],
+    [3, 6, 9]
+]);
