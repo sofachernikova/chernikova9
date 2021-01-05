@@ -23,3 +23,20 @@ function arr(myArray) {
         }
     }
 }
+
+// Задание №3
+console.log ('Задание 3')
+
+let word1 = 'аквариум'
+let word2 = 'казак'
+function checkPalindrom(str) {
+    if (str == str.split("").reverse().join("")) {
+        console.log('Слово ' + str + ' - палиндром');
+    } else {
+        console.log('Слово ' + str + ' - не палиндром');
+    }
+
+}
+
+checkPalindrom(word1);
+checkPalindrom(word2);
